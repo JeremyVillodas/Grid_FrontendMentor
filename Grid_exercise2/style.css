@@ -17,10 +17,13 @@ body {
   font-family: var(--font);
   letter-spacing: 2px;
   max-width: 1440px;
+  min-height: 100vh;
 }
 .container {
   display: grid;
+  height: 100vh;
   gap: 20px;
+  background-color: aqua;
 }
 .container > div:not(.box11) {
   border-radius: 5px;
@@ -54,7 +57,7 @@ span {
   .container {
     display: grid;
     grid-template-columns: 268px 129px 59px 141px 95px 221px 57px;
-    grid-template-rows: repeat(3, 250px);
+    grid-template-rows: repeat(3, 1fr);
   }
   .box1 {
     grid-column: 4 / 7;
